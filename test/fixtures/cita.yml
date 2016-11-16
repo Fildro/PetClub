@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-11-15
+  time: 2016-11-15 14:46:37
+  obs: MyString
+  mascota: MyString
+  medico: MyString
+  cliente: MyString
+
+two:
+  date: 2016-11-15
+  time: 2016-11-15 14:46:37
+  obs: MyString
+  mascota: MyString
+  medico: MyString
+  cliente: MyString

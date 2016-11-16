@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  categoria: MyString
+  unidadmedida: MyString
+  stock: MyString
+  precosto: 9.99
+  preven: 9.99
+  descrip: MyString
+  obs: MyString
+
+two:
+  nombre: MyString
+  categoria: MyString
+  unidadmedida: MyString
+  stock: MyString
+  precosto: 9.99
+  preven: 9.99
+  descrip: MyString
+  obs: MyString

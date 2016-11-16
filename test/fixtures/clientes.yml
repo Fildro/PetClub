@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  app: MyString
+  apm: MyString
+  dni: MyString
+  fechanac: 2016-11-15
+  distrito: MyString
+  direccion: MyString
+
+two:
+  nombre: MyString
+  app: MyString
+  apm: MyString
+  dni: MyString
+  fechanac: 2016-11-15
+  distrito: MyString
+  direccion: MyString
