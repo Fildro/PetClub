@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+ <div class="col-lg-6">
+<h1>Listado Detalle de Facturas</h1>
+
+<table class="table table-bordered table-hover table-striped">
+ <div class="table-responsive">
+  <thead>
+    <tr>
+      <th>Factura</th>
+      <th>Mascota</th>
+      <th>Servicio</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Costo</th>
+      <th>Ver</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @detallefacturas.each do |detallefactura| %>
+      <tr>
+        <td><%= detallefactura.factura_id %></td>
+        <td><%= detallefactura.mascot.nombrema %></td>
+        <td><%= detallefactura.descripcionse %></td>
+        <td><%= detallefactura.nombrep %></td>
+        <td><%= detallefactura.cantidad %></td>
+        <td><%= detallefactura.prevenp %></td>
+        <td><%= link_to 'Ver', detallefactura %></td>
+        <td><%= link_to 'Editar', edit_detallefactura_path(detallefactura) %></td>
+        <td><%= link_to 'Eliminar', detallefactura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registsrar Nuevo Detalle Factura', new_detallefactura_path %>

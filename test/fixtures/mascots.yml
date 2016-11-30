@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombrema: MyString
+  razama: MyString
+  colorma: MyString
+  fechanacma: 2016-11-28
+  sexoma: MyString
+  pesoma: 9.99
+  cliente_id: 1
+
+two:
+  nombrema: MyString
+  razama: MyString
+  colorma: MyString
+  fechanacma: 2016-11-28
+  sexoma: MyString
+  pesoma: 9.99
+  cliente_id: 1

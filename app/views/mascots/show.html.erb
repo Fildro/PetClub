@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre Mascota:</strong>
+  <%= @mascot.nombrema %>
+</p>
+
+<p>
+  <strong>Raza Mascota:</strong>
+  <%= @mascot.razama %>
+</p>
+
+<p>
+  <strong>Color Mascota:</strong>
+  <%= @mascot.colorma %>
+</p>
+
+<p>
+  <strong>Fecha Nac Mascota:</strong>
+  <%= @mascot.fechanacma %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @mascot.sexoma %>
+</p>
+
+<p>
+  <strong>Peso KG:</strong>
+  <%= @mascot.pesoma %>
+</p>
+
+<p>
+  <strong>Dueño:</strong>
+  <%= @mascot.cliente.nombrecli %>
+</p>
+
+<%= link_to 'Edit', edit_mascot_path(@mascot) %> |
+<%= link_to 'Back', mascots_path %>

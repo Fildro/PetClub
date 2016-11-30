@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombrem: MyString
+  appm: MyString
+  dnim: MyString
+  especialidadm: MyString
+
+two:
+  nombrem: MyString
+  appm: MyString
+  dnim: MyString
+  especialidadm: MyString

@@ -1,0 +1,45 @@
+<%= form_for(@mascot) do |f| %>
+  <% if @mascot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mascot.errors.count, "error") %> prohibited this mascot from being saved:</h2>
+
+      <ul>
+      <% @mascot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombre_Mascota %><br>
+    <%= f.text_field :nombrema %>
+  </div>
+  <div class="field">
+    <%= f.label :Raza_Mascota %><br>
+    <%= f.text_field :razama %>
+  </div>
+  <div class="field">
+    <%= f.label :Color_Mascota %><br>
+    <%= f.text_field :colorma %>
+  </div>
+  <div class="field">
+    <%= f.label :Fecha_Nacimiento_Mascota %><br>
+    <%= f.date_select :fechanacma %>
+  </div>
+  <div class="field">
+    <%= f.label :Sexo_Mascota %><br>
+    <%= f.text_field :sexoma %>
+  </div>
+  <div class="field">
+    <%= f.label :PesoKg_Mascota %><br>
+    <%= f.text_field :pesoma %>
+  </div>
+  <div class="field">
+    <%= f.label :Nombre_Del_Dueño %><br>
+    <%= f.collection_select :cliente_id, Cliente.all, :id, :nombrecli, include_blank: true %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

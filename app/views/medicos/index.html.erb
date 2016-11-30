@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+ <div class="col-lg-6">
+<h1>Listado de Medicos</h1>
+
+<table class="table table-bordered table-hover table-striped">
+ <div class="table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre Medico</th>
+      <th>Apellidos</th>
+      <th>DNI</th>
+      <th>Especialidad</th>
+      <th>Ver</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @medicos.each do |medico| %>
+      <tr>
+        <td><%= medico.nombrem %></td>
+        <td><%= medico.appm %></td>
+        <td><%= medico.dnim %></td>
+        <td><%= medico.especialidadm %></td>
+        <td><%= link_to 'Ver', medico %></td>
+        <td><%= link_to 'Modificar', edit_medico_path(medico) %></td>
+        <td><%= link_to 'Eliminar', medico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Registrar Nuevo Medico', new_medico_path %>
+<br>

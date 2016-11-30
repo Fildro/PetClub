@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Factura:</strong>
+  <%= @detallefactura.factura_id %>
+</p>
+
+<p>
+  <strong>Mascota:</strong>
+  <%= @detallefactura.mascot.nombrema %>
+</p>
+
+<p>
+  <strong>Servicio:</strong>
+  <%= @detallefactura.servicio.descripcionse %>
+</p>
+
+<p>
+  <strong>Producto:</strong>
+  <%= @detallefactura.producto.nombrep %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @detallefactura.cantidad %>
+</p>
+
+<p>
+  <strong>Precio Venta:</strong>
+  <%= @detallefactura.prevenp %>
+</p>
+
+<%= link_to 'Modificar', edit_detallefactura_path(@detallefactura) %> |
+<%= link_to 'Atras', detallefacturas_path %>

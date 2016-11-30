@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  factura_id: 1
+  mascot_id: 1
+  servicio_id: 1
+  producto_id: 1
+  cantidad: MyString
+  prevenp: 9.99
+
+two:
+  factura_id: 1
+  mascot_id: 1
+  servicio_id: 1
+  producto_id: 1
+  cantidad: MyString
+  prevenp: 9.99

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+ <div class="col-lg-6">
+<h1>Lista de Mascotas</h1>
+
+<table class="table table-bordered table-hover table-striped">
+ <div class="table-responsive">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Raza</th>
+      <th>Color</th>
+      <th>Fecha Nacimiento</th>
+      <th>Sexo</th>
+      <th>Peso KG</th>
+      <th>Dueño</th>
+      <th>Ver</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mascots.each do |mascot| %>
+      <tr>
+        <td><%= mascot.nombrema %></td>
+        <td><%= mascot.razama %></td>
+        <td><%= mascot.colorma %></td>
+        <td><%= mascot.fechanacma %></td>
+        <td><%= mascot.sexoma %></td>
+        <td><%= mascot.pesoma %></td>
+        <td><%= mascot.cliente.nombrecli %></td>
+        <td><%= link_to 'Ver', mascot %></td>
+        <td><%= link_to 'Modificar', edit_mascot_path(mascot) %></td>
+        <td><%= link_to 'Eliminar', mascot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </div>
+</table>
+
+
+
+<%= link_to 'Registrar Nueva Mascota', new_mascot_path %>
+<br>

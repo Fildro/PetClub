@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombrep: MyString
+  categoriap: MyString
+  unidadmedidap: MyString
+  stockp: MyString
+  precostop: 9.99
+  prevenp: 9.99
+
+two:
+  nombrep: MyString
+  categoriap: MyString
+  unidadmedidap: MyString
+  stockp: MyString
+  precostop: 9.99
+  prevenp: 9.99
