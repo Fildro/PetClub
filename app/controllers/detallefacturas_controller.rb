@@ -4,12 +4,13 @@ class DetallefacturasController < ApplicationController
   # GET /detallefacturas
   # GET /detallefacturas.json
   def index
-    @detallefacturas = Detallefactura.all
+    @detallefacturas = Detallefactura.all.paginate(page: params[:page],per_page: 5)
     .select('detallefacturas.*',
               'mascots.nombrema',
               'servicios.descripcionse',
               'productos.nombrep')
       .joins( :mascot, :servicio, :producto, :factura )
+    @totalgastofacturas = 0.00
   end
 
   # GET /detallefacturas/1

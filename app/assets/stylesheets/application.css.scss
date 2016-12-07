@@ -14,3 +14,17 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+div.fondopantalla {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(http://www.solofondosdepantalla.net/fondos-de-pantalla/Perros/Fondo-de-pantalla-Perros-04.jpg);
+  background-size: cover;
+  z-index: 0;
+}
+

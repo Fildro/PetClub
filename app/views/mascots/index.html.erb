@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
- <div class="col-lg-6">
+ <div class="col-sm-12">
 <h1>Lista de Mascotas</h1>
 
 <table class="table table-bordered table-hover table-striped">
@@ -38,8 +38,10 @@
   </tbody>
   </div>
 </table>
+</div>
 
 
-
+<%=will_paginate @mascots %>
+<br>
 <%= link_to 'Registrar Nueva Mascota', new_mascot_path %>
 <br>

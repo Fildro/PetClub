@@ -4,7 +4,7 @@ class MedicosController < ApplicationController
   # GET /medicos
   # GET /medicos.json
   def index
-    @medicos = Medico.all
+    @medicos = Medico.all.paginate(page: params[:page],per_page: 5)
   end
 
   # GET /medicos/1

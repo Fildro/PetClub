@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
- <div class="col-lg-6">
+ <div class="col-sm-12">
 <h1>Listado de Servicios</h1>
 
 <table class="table table-bordered table-hover table-striped">
@@ -29,7 +29,10 @@
     <% end %>
   </tbody>
 </table>
+</div>
+
 
 <br>
-
 <%= link_to 'Registrar Nuevo Servicio', new_servicio_path %>
+<br>
+<%=will_paginate @servicios %>

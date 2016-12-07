@@ -4,7 +4,7 @@ class MascotsController < ApplicationController
   # GET /mascots
   # GET /mascots.json
   def index
-    @mascots = Mascot.all
+    @mascots = Mascot.all.paginate(page: params[:page],per_page: 5)
   end
 
   # GET /mascots/1

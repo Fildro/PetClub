@@ -4,7 +4,7 @@ class FacturasController < ApplicationController
   # GET /facturas
   # GET /facturas.json
   def index
-    @facturas = Factura.all
+    @facturas = Factura.all.paginate(page: params[:page],per_page: 5)
   end
 
   # GET /facturas/1

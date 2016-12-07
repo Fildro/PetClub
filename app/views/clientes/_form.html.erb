@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :Dirección %><br>
-    <%= f.text_field :direccioncli %>
+    <%= f.select(:direccioncli, Cliente::CLASS_LIST) %>
   </div>
   <div class="actions">
     <%= f.submit %>

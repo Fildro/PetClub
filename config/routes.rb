@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'login/index'
+  get 'index/login'
 
   devise_for :users
-  
   resources :detallefacturas
   resources :facturas
   resources :medicos
@@ -12,6 +11,7 @@ Rails.application.routes.draw do
   resources :mascots
   resources :clientes
 
+  root :to => 'clientes#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
